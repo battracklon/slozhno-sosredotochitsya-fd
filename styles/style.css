@@ -176,6 +176,7 @@
 
 .card_item-text {
   color: var(--text-color);
+  line-height: 1.298;
   font-size: 18px;
 }
 
