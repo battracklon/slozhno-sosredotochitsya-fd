@@ -5,6 +5,8 @@
   background-image: var(--page-background-image);
   background-attachment: fixed;
   background-color: #fff1f7;
+  background-size: cover;
+  background-position: center;
   /* padding: 10px; */
 }
 
@@ -307,6 +309,12 @@ footer {
      font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 
+  .header__rec {
+    padding-inline-end: 18px;
+    top: 20px;
+    right: 30px;
+  }
+
   .cards {
     padding: 20px;
     gap: 80px;
@@ -359,6 +367,10 @@ footer {
     height: 100%;
     object-fit: cover;
   }
+
+  .footer-title { 
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  }
   
       
 } 
@@ -388,10 +400,9 @@ footer {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 20px;
-    }
-
+    } 
     
-      
+    
 }
 
 
