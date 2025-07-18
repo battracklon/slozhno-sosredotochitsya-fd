@@ -155,7 +155,7 @@
 .cards__group-title {
   font-size: 18px;
   font-weight: bold;
-  /* margin-block-start: 50px; */
+  margin-block-start: 3px;
   margin-block-end: 20px;
   color: var(--group-title-color);
 }
@@ -172,6 +172,7 @@
   font-weight: bold;
   margin-block-end: 9px;
   color: var(--subtitle-color);
+  font-size: 18px;
 }
 
 .card_item-text {
