@@ -234,7 +234,6 @@ footer {
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   font-weight: bold;
   line-height: 0.83;
-  color: #ffc2e6;
   text-shadow: 2px 2px 0 var(--accent-color);
   color: var(--title-color);
 }
