@@ -4,7 +4,7 @@
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
   background-image: var(--page-background-image);
   background-attachment: fixed;
-  background-color: #fff1f7;
+  background-color: var(--background-color);
   background-size: cover;
   background-position: center;
   /* padding: 10px; */
@@ -14,21 +14,20 @@
   z-index: 1;
   position: relative;
   display: grid;
-  align-items: start; 
+  align-items: start;
   grid-template-rows: 1fr 1fr 1fr;
   height: 100vh;
   min-height: 668px;
   /* background-color: #ff0; */
   padding: 10px;
-  
 }
 
 .decorated-zone::before {
-  content: '';
+  content: "";
   position: absolute;
   display: block;
   right: 10px;
-  top:10px;
+  top: 10px;
   border-inline-end: 1px solid var(--corner-color);
   border-block-start: 1px solid var(--corner-color);
   z-index: 10;
@@ -37,11 +36,11 @@
 }
 
 .decorated-zone::after {
-  content: '';
+  content: "";
   position: absolute;
   display: block;
   bottom: 10px;
-  left:10px;
+  left: 10px;
   border-inline-start: 1px solid var(--corner-color);
   border-block-end: 1px solid var(--corner-color);
   z-index: 10;
@@ -61,7 +60,7 @@
   padding: 0;
   margin: 0;
   flex-direction: column;
-  list-style-type: none;  
+  list-style-type: none;
 }
 
 .header__theme-menu-button {
@@ -74,20 +73,19 @@
   outline: 0;
   font-size: 18px;
   line-height: 1.2;
-  text-transform:lowercase;  
-  cursor: pointer; 
-  border: 1px solid transparent; 
+  text-transform: lowercase;
+  cursor: pointer;
+  border: 1px solid transparent;
   /* border: 1px solid #000;  */
 }
 
- .header__theme-menu-button:hover {
+.header__theme-menu-button:hover {
   border-color: rgba(50, 49, 45, 0.4);
 }
 
 .header__theme-menu-button:focus-visible {
   border-block-end: 1px solid #000;
-  
-} 
+}
 
 .header__theme-menu-button_active {
   border: 1px solid var(--text-color);
@@ -110,7 +108,7 @@
 }
 
 .header__text {
-  margin-block-start: 40px;  
+  margin-block-start: 40px;
 }
 
 .header__text-paragraph {
@@ -120,12 +118,12 @@
 }
 
 .title-decor {
-  background-color: var(--accent-color);  
+  background-color: var(--accent-color);
 }
 
 .header__rec {
-  position: absolute;  
-  color: #FF0070;
+  position: absolute;
+  color: #ff0070;
   padding-inline-end: 18px;
   font-size: 18px;
   top: 10px;
@@ -134,7 +132,7 @@
 }
 
 .header__rec::after {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   right: 0;
@@ -142,13 +140,13 @@
   width: 9px;
   height: 9px;
   border-radius: 50%;
-  background-color: #FF0070;
+  background-color: #ff0070;
   box-shadow: 0px 0px 5px 3px rgba(255, 0, 112, 1);
 }
 
 .cards {
   padding: 10px;
-  margin-block-start:30px;
+  margin-block-start: 30px;
   display: grid;
   grid-template-columns: 1fr;
   row-gap: 50px;
@@ -217,10 +215,6 @@
   /* background-color: #f00; */
 }
 
-.picture-cards__item {
-  /* background-color: #00f; */
-}
-
 .picture-cards__item-picture {
   width: 100%;
   margin: 0;
@@ -240,23 +234,22 @@ footer {
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   font-weight: bold;
   line-height: 0.83;
-  color: #FFC2E6;
+  color: #ffc2e6;
   text-shadow: 2px 2px 0 var(--accent-color);
   color: var(--title-color);
 }
-
 
 .gridtest {
   display: grid;
   grid-template-columns: 300px 300px;
   /* grid-auto-rows: 50px; */
   gap: 10px;
-  justify-content:center;
+  justify-content: center;
   align-content: start;
-  align-items:center;
-  justify-items:center;
+  align-items: center;
+  justify-items: center;
   margin-top: 200px;
-  margin-bottom: 200px; 
+  margin-bottom: 200px;
   width: 100%;
   background-color: #ff0;
   height: 100vh;
@@ -272,12 +265,11 @@ footer {
   grid-row: 1/100;
 } */
 
-
 @media (min-width: 768px) {
   .header {
-     align-items: center; 
-     min-height: 1024px; 
-     padding: 5px;   
+    align-items: center;
+    min-height: 1024px;
+    padding: 5px;
   }
 
   .decorated-zone::before {
@@ -287,7 +279,7 @@ footer {
 
   .decorated-zone::after {
     bottom: 20px;
-    left:20px;
+    left: 20px;
   }
 
   .header__theme-menu {
@@ -306,7 +298,7 @@ footer {
   }
 
   .header__title-text {
-     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 
   .header__rec {
@@ -318,8 +310,8 @@ footer {
   .cards {
     padding: 20px;
     gap: 80px;
-    margin-block-start:38px;
-  }  
+    margin-block-start: 38px;
+  }
 
   .cards__group-two-cols {
     display: grid;
@@ -330,7 +322,7 @@ footer {
   .cards__group-title {
     padding-inline-end: 2px;
   }
-  
+
   .cards__group-title-left-text {
     width: 30%;
     /* margin-block-start: 30px; */
@@ -345,66 +337,58 @@ footer {
   .picture-cards__item--sunset {
     grid-column-start: 1;
     grid-column-end: 3;
-  } 
+  }
 
   .picture-cards__item--ice-cream {
-    grid-column: 3/4; 
+    grid-column: 3/4;
     grid-row-start: 1;
     grid-row-end: 3;
-  }  
+  }
 
   .picture-cards__item--tape {
-    grid-column: 1/2; 
+    grid-column: 1/2;
     grid-row: 2/5;
-  }   
+  }
 
   .picture-cards__item--street {
-    grid-column: 2/4; 
+    grid-column: 2/4;
     grid-row: 3/5;
-  } 
+  }
 
   .picture-cards__item img {
     height: 100%;
     object-fit: cover;
   }
 
-  .footer-title { 
+  .footer-title {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
-  
-      
-} 
-
-@media (min-width: 1024px) {
-    .header__theme-menu {
-      justify-self: center;
-      align-self: start;
-      margin-block-start: 14px;
-      padding-inline-end: inherit;
-    }
-
-    .header__theme-menu-list {
-      gap: 10px;
-      flex-direction: row;
-    }
-
-    .header {
-      min-height: 768px; 
-    }
-
-    .header__text {
-      margin-block-start: 50px;  
-    }
-
-    .cards__group-items-3cols {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 20px;
-    } 
-    
-    
 }
 
+@media (min-width: 1024px) {
+  .header__theme-menu {
+    justify-self: center;
+    align-self: start;
+    margin-block-start: 14px;
+    padding-inline-end: inherit;
+  }
 
+  .header__theme-menu-list {
+    gap: 10px;
+    flex-direction: row;
+  }
 
+  .header {
+    min-height: 768px;
+  }
 
+  .header__text {
+    margin-block-start: 50px;
+  }
+
+  .cards__group-items-3cols {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+}

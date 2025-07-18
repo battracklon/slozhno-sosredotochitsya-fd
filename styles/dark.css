@@ -10,25 +10,47 @@
     чем стили в медиазапросе предпочтений пользователя
   */
   --page-background-image: url(../images/cover-image-dark.png);
-  --accent-color: #FF0070;
-  --text-color: #F1B2CE;
-  --title-color: #DB00FF;
-  --group-title-color: #FF0070;
+  --background-color: #000838;
+  --accent-color: #ff0070;
+  --text-color: #f1b2ce;
+  --title-color: #db00ff;
+  --group-title-color: #ff0070;
   --corner-color: var(--accent-color);
   --subtitle-color: #000028;
 }
 
-.theme-dark .page {
-  /* Вам также нужно будет написать ряд подобных селекторов */
+/* .theme-dark .page { */
+/* Вам также нужно будет написать ряд подобных селекторов */
+/* } */
+
+.theme-dark .header__theme-menu-button {
+  color: var(--accent-color);
+}
+
+.theme-dark .header__theme-menu-button:hover {
+  border-color: rgba(255, 0, 112, 0.4);
+}
+
+.theme-dark .header__theme-menu-button:focus-visible {
+  border-block-end: 1px solid var(--accent-color);
+}
+
+.theme-dark .header__theme-menu-button_active {
+  border: 1px solid var(--accent-color);
+}
+
+.theme-dark .header__rec {
+  display: block;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --page-background-image: url(../images/cover-image-dark.png);
-    --accent-color: #FF0070;
-    --text-color: #F1B2CE;
-    --title-color: #DB00FF;
-    --group-title-color: #FF0070;
+    --background-color: #000838;
+    --accent-color: #ff0070;
+    --text-color: #f1b2ce;
+    --title-color: #db00ff;
+    --group-title-color: #ff0070;
     --corner-color: var(--accent-color);
     --subtitle-color: #000028;
   }
@@ -44,11 +66,10 @@
 
   .header__theme-menu-button:focus-visible {
     border-block-end: 1px solid var(--accent-color);
-    
   }
 
   .header__theme-menu-button_active {
-    border: 1px solid var(--accent-color);    
+    border: 1px solid var(--accent-color);
   }
 
   .header__rec {
@@ -58,28 +79,4 @@
   .header__text-paragraph {
     color: #000028;
   }
-  
-} 
-
-.theme-dark .header__theme-menu-button {
-  color: var(--accent-color);
 }
-
-.theme-dark .header__theme-menu-button:hover {
-  border-color: rgba(255, 0, 112, 0.4);
-}
-
-.theme-dark .header__theme-menu-button:focus-visible {
-  border-block-end: 1px solid var(--accent-color);
-  
-}
-
-.theme-dark .header__theme-menu-button_active {
-  border: 1px solid var(--accent-color);
-  
-}
-
-.theme-dark .header__rec {
-  display: block;
-}
-

@@ -10,17 +10,18 @@
     чем стили в медиазапросе предпочтений пользователя
   */
   --page-background-image: url(../images/cover-image-light.png);
+  --background-color: #fff1f7;
   --accent-color: #ff8dcb;
   --text-color: #353430;
-  --title-color: #FFC2E6;
+  --title-color: #ffc2e6;
   --group-title-color: var(--text-color);
   --corner-color: var(--text-color);
   --subtitle-color: var(--text-color);
 }
 
-.theme-light .page {
-  /* Вам также нужно будет написать ряд подобных селекторов */
-}
+/* .theme-light .page { */
+/* Вам также нужно будет написать ряд подобных селекторов */
+/* } */
 
 .theme-light .header__theme-menu-button {
   color: var(--text-color);
@@ -32,11 +33,10 @@
 
 .theme-light .header__theme-menu-button:focus-visible {
   border-block-end: 1px solid var(--text-color);
-  
 }
 
 .theme-light .header__theme-menu-button_active {
-  border: 1px solid var(--text-color);  
+  border: 1px solid var(--text-color);
 }
 
 .theme-light .header__rec {
