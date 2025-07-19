@@ -27,8 +27,8 @@
   content: "";
   position: absolute;
   display: block;
-  /* right: 10px;
-  top: 10px; */
+  right: 0;
+  top: 0;
   border-inline-end: 1px solid var(--corner-color);
   border-block-start: 1px solid var(--corner-color);
   z-index: 10;
@@ -40,8 +40,8 @@
   content: "";
   position: absolute;
   display: block;
-  /* bottom: 10px;
-  left: 10px; */
+  bottom: 20px;
+  left: 0;
   border-inline-start: 1px solid var(--corner-color);
   border-block-end: 1px solid var(--corner-color);
   z-index: 10;
@@ -221,6 +221,7 @@
 }
 
 .card_item-add-title-pic {
+  margin-block-start: 3px;
   margin-block-end: 10px;
 }
 
@@ -235,19 +236,21 @@
 }
 
 footer {
+  /* background-color: #ff0; */
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100vh;
   min-height: 668px;
-  margin-block-start: 30px;
+  margin-block-start: 50px;
 }
 
 .footer-title {
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   font-weight: bold;
-  line-height: 0.83;
+  line-height: 0.6;
+  margin-block-start: -14px;
   text-shadow: 2px 2px 0 var(--accent-color);
   color: var(--title-color);
 }
