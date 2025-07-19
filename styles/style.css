@@ -146,22 +146,22 @@
 
 .cards {
   padding: 10px;
-  margin-block-start: 30px;
+  margin-block-start: 29px;
   display: grid;
   grid-template-columns: 1fr;
-  row-gap: 50px;
+  gap: 50px;
 }
 
 .cards__group-title {
   font-size: 18px;
   font-weight: bold;
-  /* margin-block-start: 50px; */
+  margin-block-start: 0;
   margin-block-end: 20px;
   color: var(--group-title-color);
 }
 
 .card_item {
-  margin-block-end: 20px;
+  /* margin-block-end: 20px; */
 }
 
 .card_item:last-child {
@@ -170,13 +170,15 @@
 
 .card_item-title {
   font-weight: bold;
-  margin-block-end: 9px;
+  margin-block-end: 10px;
+  margin-block-start: 21px;
+  font-size: 18px;
   color: var(--subtitle-color);
 }
 
 .card_item-text {
   color: var(--text-color);
-  line-height: 1.298;
+  /* line-height: 1.298; */
   font-size: 18px;
 }
 
