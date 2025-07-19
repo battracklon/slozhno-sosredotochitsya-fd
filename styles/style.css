@@ -7,7 +7,8 @@
   background-color: var(--background-color);
   background-size: cover;
   background-position: center;
-  padding: 10px;
+  padding-inline-start: 10px;
+  padding-inline-end: 10px;
 }
 
 .header {
@@ -19,6 +20,9 @@
   grid-template-rows: 1fr 1fr 1fr;
   height: 100vh;
   min-height: 668px;
+  margin-block-end: 10px;
+  padding-block-start: 10px;
+  padding-block-end: 10px;
   /* background-color: #ff0; */
   /* padding: 10px; */
 }
@@ -28,7 +32,7 @@
   position: absolute;
   display: block;
   right: 0;
-  top: 0;
+  top: 10px;
   border-inline-end: 1px solid var(--corner-color);
   border-block-start: 1px solid var(--corner-color);
   z-index: 10;
@@ -40,7 +44,7 @@
   content: "";
   position: absolute;
   display: block;
-  bottom: 20px;
+  bottom: 10px;
   left: 0;
   border-inline-start: 1px solid var(--corner-color);
   border-block-end: 1px solid var(--corner-color);
@@ -105,11 +109,11 @@
   text-shadow: 4px 4px 0 var(--accent-color);
   /* padding-inline-end: 10px; */
   /* padding-inline-start: 10px; */
-  padding-block-start: 5px;
+  padding-block-start: 10px;
 }
 
 .header__text {
-  margin-block-start: 30px;
+  margin-block-start: 43px;
 }
 
 .header__text-paragraph {
@@ -147,7 +151,7 @@
 
 .cards {
   /* padding: 10px; */
-  margin-block-start: 29px;
+  margin-block-start: 40px;
   display: grid;
   grid-template-columns: 1fr;
   gap: 50px;
@@ -228,6 +232,7 @@
 .picture-cards {
   display: grid;
   gap: 10px;
+  /* background-color: #f0f; */
 }
 
 .picture-cards img {
@@ -243,14 +248,14 @@ footer {
   justify-content: center;
   height: 100vh;
   min-height: 668px;
-  margin-block-start: 50px;
+  margin-block-start: 40px;
 }
 
 .footer-title {
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   font-weight: bold;
   line-height: 0.6;
-  margin-block-start: -14px;
+  /* margin-block-start: -14px; */
   text-shadow: 2px 2px 0 var(--accent-color);
   color: var(--title-color);
 }
