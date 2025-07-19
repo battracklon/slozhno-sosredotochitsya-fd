@@ -189,7 +189,7 @@
   padding-block-start: 0;
   padding-block-end: 0;
   color: var(--text-color);
-  /* line-height: 23.4px; */
+  line-height: 1.296;
   font-size: 18px;
 }
 
