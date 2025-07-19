@@ -177,7 +177,7 @@
 .card_item-title {
   font-weight: bold;
   margin-block-start: 21px;
-  margin-block-end: 10px;  
+  margin-block-end: 10px;
   font-size: 18px;
   /* line-height: 23.4px; */
   color: var(--subtitle-color);
@@ -323,7 +323,7 @@ footer {
     justify-self: end;
     width: 50%;
     margin-inline-end: 0;
-    margin-block-start: 45px;  
+    margin-block-start: 45px;
   }
 
   /* .header__title {
