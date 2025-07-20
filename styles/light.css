@@ -23,22 +23,4 @@
 /* Вам также нужно будет написать ряд подобных селекторов */
 /* } */
 
-.theme-light .header__theme-menu-button {
-  color: var(--text-color);
-}
 
-.theme-light .header__theme-menu-button:hover {
-  border-color: rgba(50, 49, 45, 0.4);
-}
-
-.theme-light .header__theme-menu-button:focus-visible {
-  border-block-end: 1px solid var(--text-color);
-}
-
-.theme-light .header__theme-menu-button_active {
-  border: 1px solid var(--text-color);
-}
-
-.theme-light .header__rec {
-  display: none;
-}
