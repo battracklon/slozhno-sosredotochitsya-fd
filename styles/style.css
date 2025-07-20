@@ -467,7 +467,7 @@ footer {
     margin-block-start: 58px;
   }
 
-  .cards__group-items_3-cols {
+  .cards__group-items_attention {
     display: grid;
     align-items: start;
     grid-template-columns: repeat(3, 1fr);
