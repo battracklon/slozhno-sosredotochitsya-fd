@@ -12,4 +12,7 @@
   --group-title-color: var(--text-color);
   --corner-color: var(--text-color);
   --subtitle-color: var(--text-color);
+  --menu-color: var(--text-color);
+  --menu-border-hover-color: rgba(50, 49, 45, 0.4);
+  --rec-display: none;
 }

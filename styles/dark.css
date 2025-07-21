@@ -17,30 +17,9 @@
   --group-title-color: #ff0070;
   --corner-color: var(--accent-color);
   --subtitle-color: #000028;
-}
-
-/* .theme-dark .page { */
-/* Вам также нужно будет написать ряд подобных селекторов */
-/* } */
-
-.theme-dark .header__theme-menu-button {
-  color: var(--accent-color);
-}
-
-.theme-dark .header__theme-menu-button:hover {
-  border-color: rgba(255, 0, 112, 0.4);
-}
-
-.theme-dark .header__theme-menu-button:focus-visible {
-  border-block-end: 1px solid var(--accent-color);
-}
-
-.theme-dark .header__theme-menu-button_active {
-  border: 1px solid var(--accent-color);
-}
-
-.theme-dark .header__rec {
-  display: block;
+  --menu-color: var(--accent-color);
+  --menu-border-hover-color: rgba(255, 0, 112, 0.4);
+  --rec-display: block;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -53,27 +32,10 @@
     --group-title-color: #ff0070;
     --corner-color: var(--accent-color);
     --subtitle-color: #000028;
+    --menu-color: var(--accent-color);
+    --menu-border-hover-color: rgba(255, 0, 112, 0.4);
+    --rec-display: block;
   }
-
-  /* Остальные стили, только при необходимости */
-  .header__theme-menu-button {
-    color: var(--accent-color);
-  }
-
-  .header__theme-menu-button:hover {
-    border-color: rgba(255, 0, 112, 0.4);
-  }
-
-  .header__theme-menu-button:focus-visible {
-    border-block-end: 1px solid var(--accent-color);
-  }
-
-  .header__theme-menu-button_active {
-    border: 1px solid var(--accent-color);
-  }
-
-  .header__rec {
-    display: block;
-  }
+   
   
 }
